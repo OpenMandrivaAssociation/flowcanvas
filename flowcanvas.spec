@@ -4,7 +4,7 @@
 
 Name:		flowcanvas
 Version:	0.6.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	An interactive Gtkmm/Gnomecanvasmm widget
 License:	GPLv2+
 Group:		System/Libraries
@@ -26,6 +26,8 @@ finite state automata diagrams).
 %package -n %{libname}
 Summary:	%{summary}
 Group:		%{group}
+
+Provides:	%{name} = %{version}-%{release}
 
 %description -n %{libname}
 FlowCanvas is an interactive Gtkmm/Gnomecanvasmm widget for "boxes
