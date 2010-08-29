@@ -4,7 +4,7 @@
 
 Name:		flowcanvas
 Version:	0.6.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	An interactive Gtkmm/Gnomecanvasmm widget
 License:	GPLv2+
 Group:		System/Libraries
