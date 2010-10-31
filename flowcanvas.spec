@@ -3,8 +3,8 @@
 %define develname %mklibname %{name} -d
 
 Name:		flowcanvas
-Version:	0.6.0
-Release:	%mkrel 3
+Version:	0.6.4
+Release:	%mkrel 1
 Summary:	An interactive Gtkmm/Gnomecanvasmm widget
 License:	GPLv2+
 Group:		System/Libraries
