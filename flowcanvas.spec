@@ -1,22 +1,23 @@
 %define major 4
+%define oldmajor 3
 %define libname %mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
 
-Name:		flowcanvas
-Version:	0.6.4
-Release:	%mkrel 2
-Summary:	An interactive Gtkmm/Gnomecanvasmm widget
-License:	GPLv2+
-Group:		System/Libraries
-Url:		http://drobilla.net/software/flowcanvas/
-Source0:	http://download.drobilla.net/%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Name:       flowcanvas
+Version:    0.6.4
+Release:    %mkrel 3
+Summary:    An interactive Gtkmm/Gnomecanvasmm widget
+License:    GPLv2+
+Group:      System/Libraries
+Url:        http://drobilla.net/software/flowcanvas/
+Source0:    http://download.drobilla.net/%{name}-%{version}.tar.bz2
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
-BuildRequires:	waf
-BuildRequires:	gtkmm2.4-devel
-BuildRequires:	libgnomecanvasmm2.6-devel
-BuildRequires:	boost-devel
-BuildRequires:	graphviz-devel
+BuildRequires:  waf
+BuildRequires:  gtkmm2.4-devel
+BuildRequires:  libgnomecanvasmm2.6-devel
+BuildRequires:  boost-devel
+BuildRequires:  graphviz-devel
 
 %description
 FlowCanvas is an interactive Gtkmm/Gnomecanvasmm widget for "boxes 
@@ -24,10 +25,10 @@ and lines" style environments (e.g. modular synths or interactive
 finite state automata diagrams).
 
 %package -n %{libname}
-Summary:	%{summary}
-Group:		%{group}
+Summary:    %{summary}
+Group:      %{group}
 
-Provides:	%{name} = %{version}-%{release}
+Provides:   %{name} = %{version}-%{release}
 
 %description -n %{libname}
 FlowCanvas is an interactive Gtkmm/Gnomecanvasmm widget for "boxes
@@ -35,11 +36,12 @@ and lines" style environments (e.g. modular synths or interactive
 finite state automata diagrams).
 
 %package -n %{develname}
-Summary:	Development files for %{name}
-Group:		Development/GNOME and GTK+
+Summary:    Development files for %{name}
+Group:      Development/GNOME and GTK+
 
-Provides:	%{name}-devel = %{version}-%{release}
-Requires:	%{libname} = %{version}
+Provides:   %{name}-devel = %{version}-%{release}
+Requires:   %{libname} = %{version}
+Obsoletes:  %mklibname %{name} %{oldmajor}
 
 %description -n %{develname}
 This package contains development files for %{name}.
@@ -50,10 +52,10 @@ This package contains development files for %{name}.
 %build
 %setup_compile_flags
 %__waf configure \
-	--prefix=%{_prefix} \
-	--datadir=%{_datadir} \
-	--libdir=%{_libdir} \
-	--includedir=%{_includedir}
+    --prefix=%{_prefix} \
+    --datadir=%{_datadir} \
+    --libdir=%{_libdir} \
+    --includedir=%{_includedir}
 
 %__waf build
 
