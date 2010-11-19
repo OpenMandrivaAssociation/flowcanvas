@@ -1,11 +1,10 @@
 %define major 4
-%define oldmajor 3
 %define libname %mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
 
 Name:       flowcanvas
 Version:    0.6.4
-Release:    %mkrel 3
+Release:    %mkrel 4
 Summary:    An interactive Gtkmm/Gnomecanvasmm widget
 License:    GPLv2+
 Group:      System/Libraries
@@ -41,7 +40,6 @@ Group:      Development/GNOME and GTK+
 
 Provides:   %{name}-devel = %{version}-%{release}
 Requires:   %{libname} = %{version}
-Obsoletes:  %mklibname %{name} %{oldmajor}
 
 %description -n %{develname}
 This package contains development files for %{name}.
