@@ -1,10 +1,12 @@
-%define major 4
+%define major 5
+
 %define libname %mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
 
 Name:       flowcanvas
-Version:    0.6.4
-Release:    %mkrel 4
+Version:    0.7.1
+Release:    %mkrel 1
+
 Summary:    An interactive Gtkmm/Gnomecanvasmm widget
 License:    GPLv2+
 Group:      System/Libraries
@@ -49,17 +51,19 @@ This package contains development files for %{name}.
 
 %build
 %setup_compile_flags
-%__waf configure \
+./waf configure \
     --prefix=%{_prefix} \
     --datadir=%{_datadir} \
     --libdir=%{_libdir} \
-    --includedir=%{_includedir}
+    --includedir=%{_includedir} \
 
-%__waf build
+# execution of waf link in source topdir fails to include autowaf.py:
+
+./autowaf/waf build
 
 %install
 rm -rf %{buildroot}
-%waf_install
+./autowaf/waf install --destdir=%{buildroot}
 
 %files -n %{libname}
 %defattr(-,root,root)
