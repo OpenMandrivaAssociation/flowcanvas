@@ -5,7 +5,7 @@
 
 Name:       flowcanvas
 Version:    0.7.1
-Release:    %mkrel 2
+Release:    3
 
 Summary:    An interactive Gtkmm/Gnomecanvasmm widget
 License:    GPLv2+
@@ -21,8 +21,8 @@ BuildRequires:  boost-devel
 BuildRequires:  graphviz-devel
 
 %description
-FlowCanvas is an interactive Gtkmm/Gnomecanvasmm widget for "boxes 
-and lines" style environments (e.g. modular synths or interactive 
+FlowCanvas is an interactive Gtkmm/Gnomecanvasmm widget for "boxes
+and lines" style environments (e.g. modular synths or interactive
 finite state automata diagrams).
 
 %package -n %{libname}
