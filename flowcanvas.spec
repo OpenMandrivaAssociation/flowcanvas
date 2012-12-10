@@ -75,3 +75,55 @@ rm -rf %{buildroot}
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
 %{_includedir}/%{name}
+
+
+%changelog
+* Sat Dec 24 2011 Frank Kober <emuse@mandriva.org> 0.7.1-3
++ Revision: 745010
+- rebuild to link against newer libpng
+
+* Wed May 11 2011 Funda Wang <fwang@mandriva.org> 0.7.1-2
++ Revision: 673597
+- rebuild for new graphviz
+
+* Thu Jan 20 2011 Frank Kober <emuse@mandriva.org> 0.7.1-1
++ Revision: 631905
+- new version 0.7.1
+  o new major.minor 5.1
+  o do not obsolete old major pkg
+  o workaround waf execution path
+- new version 0.7.1
+  o new major.minor 5.1
+  o do not obsolete old major pkg
+  o workaround waf execution path
+
+* Fri Nov 19 2010 Ahmad Samir <ahmadsamir@mandriva.org> 0.6.4-4mdv2011.0
++ Revision: 599041
+- Don't obsolete old major lib
+
+* Sat Nov 06 2010 Frank Kober <emuse@mandriva.org> 0.6.4-3mdv2011.0
++ Revision: 594242
+- Clean spec formatting
+- Obsolete old major
+
+* Mon Nov 01 2010 Frank Kober <emuse@mandriva.org> 0.6.4-2mdv2011.0
++ Revision: 591550
+- fix major
+
+* Sun Oct 31 2010 Frank Kober <emuse@mandriva.org> 0.6.4-1mdv2011.0
++ Revision: 591197
+- new version 0.6.4
+
+* Sun Aug 29 2010 Frank Kober <emuse@mandriva.org> 0.6.0-3mdv2011.0
++ Revision: 574194
+- rebuild for gdk-pixbuf
+
+* Tue Jan 19 2010 Jérôme Brenier <incubusss@mandriva.org> 0.6.0-2mdv2010.1
++ Revision: 493740
+- add a Provides : flowcanvas for the lib subpackage
+
+* Tue Jan 19 2010 Jérôme Brenier <incubusss@mandriva.org> 0.6.0-1mdv2010.1
++ Revision: 493738
+- import flowcanvas
+
+
