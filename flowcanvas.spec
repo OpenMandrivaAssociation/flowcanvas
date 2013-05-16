@@ -16,7 +16,7 @@ BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:  waf
 BuildRequires:  gtkmm2.4-devel
-BuildRequires:  libgnomecanvasmm2.6-devel
+BuildRequires:  pkgconfig(libgnomecanvasmm-2.6)
 BuildRequires:  boost-devel
 BuildRequires:  graphviz-devel
 
