@@ -5,14 +5,13 @@
 
 Name:       flowcanvas
 Version:    0.7.1
-Release:    3
+Release:    4
 
 Summary:    An interactive Gtkmm/Gnomecanvasmm widget
 License:    GPLv2+
 Group:      System/Libraries
 Url:        http://drobilla.net/software/flowcanvas/
 Source0:    http://download.drobilla.net/%{name}-%{version}.tar.bz2
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:  waf
 BuildRequires:  gtkmm2.4-devel
