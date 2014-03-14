@@ -14,7 +14,7 @@ BuildRequires:	waf
 BuildRequires:	boost-devel
 BuildRequires:	pkgconfig(gtkmm-2.4)
 BuildRequires:	pkgconfig(libgnomecanvasmm-2.6)
-BuildRequires:	pkgconfig(libgraph)
+BuildRequires:	pkgconfig(libgvc)
 
 %description
 FlowCanvas is an interactive Gtkmm/Gnomecanvasmm widget for "boxes
