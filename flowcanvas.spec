@@ -10,6 +10,7 @@ License:	GPLv2+
 Group:		System/Libraries
 Url:		http://drobilla.net/software/flowcanvas/
 Source0:	http://download.drobilla.net/%{name}-%{version}.tar.bz2
+Patch1:		flowcanvas-0.7.1-graphviz23.patch
 BuildRequires:	waf
 BuildRequires:	boost-devel
 BuildRequires:	pkgconfig(gtkmm-2.4)
@@ -56,6 +57,7 @@ This package contains development files for %{name}.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %setup_compile_flags
