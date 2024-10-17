@@ -8,7 +8,7 @@ Version:	0.7.1
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
-Url:		http://drobilla.net/software/flowcanvas/
+Url:		https://drobilla.net/software/flowcanvas/
 Source0:	http://download.drobilla.net/%{name}-%{version}.tar.bz2
 Patch1:		flowcanvas-0.7.1-graphviz23.patch
 BuildRequires:	waf
